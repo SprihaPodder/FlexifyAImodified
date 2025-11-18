@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: flexify-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    branch: main
+    autoDeploy: true
+    plan: starter
+
+  - type: web
+    name: flexify-frontend
+    env: docker
+    dockerfilePath: frontend/Dockerfile
+    branch: main
+    autoDeploy: true
+    plan: starter
